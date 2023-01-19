@@ -3,8 +3,10 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
+import funcionality.createPlace;
 
 public class get_data_for_place {
+    String placeID = createPlace.createPlaceCall();
 
        @Test
         public  void TestCase01_Get_Data_for_Place(){
@@ -37,5 +39,23 @@ public class get_data_for_place {
                 .statusCode(200);
 
     }
+
+    @Test
+
+    public void testCase03_PlaceID_New(){
+        given().log()
+                .all()
+                .queryParam("place_id",placeID)
+                .queryParam("key","qaclick123")
+                .header("Content-Type","application/json")
+                .when().get("/maps/api/place/get/json")
+                .then()
+                .log()
+                .all()
+                .statusCode(200)
+                .body("location.latitude", equalTo("-38.383494"));
+    }
+
+
 
 }
