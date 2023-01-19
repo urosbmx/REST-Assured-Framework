@@ -1,4 +1,5 @@
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -37,6 +38,24 @@ public class get_data_for_place {
                 .log()
                 .all()
                 .statusCode(200);
+//How to get respons from API
+        String getJsonBody =
+                given()
+                        .log()
+                        .all()
+                        .queryParam("place_id","2175b1ccb05886762d0ce7e8b140c51c")
+                        .queryParam("key","qaclick123")
+                        .when()
+                        .get("/maps/api/place/get/json")
+                        .then()
+                        .extract()
+                        .response()
+                        .asString();
+        System.out.println(getJsonBody);
+        //Take specific part of response(example take from the location of API take parameter Longitude)
+            JsonPath js = new JsonPath(getJsonBody);
+            String test = js.getString("location.longitude");
+            System.out.println(test);
 
     }
 
