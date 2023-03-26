@@ -7,8 +7,7 @@ import org.testng.annotations.Test;
 import java.util.Random;
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.notNullValue;
+import static org.hamcrest.Matchers.*;
 
 public class check_book_value {
 
@@ -59,8 +58,8 @@ public class check_book_value {
             .when().get("Library/GetBook.php?ID=2")
             .then().log().all()
             .assertThat()
-            .statusCode(404)
-            .body("msg",equalTo("The book by requested bookid / author name does not exists!"));
+            .statusCode(200)
+            .body("book_name",contains("Learn Appium Automation with Colton"));
 
 
 
