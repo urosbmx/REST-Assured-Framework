@@ -18,7 +18,7 @@ public class checkMultyBooks {
 
 @DataProvider(name = "CorectIDBooks")
     public Object[]idData(){
-        return new Object[] {45,21,32,22,11,12,45};
+        return new Object[] {45,21,32,22,11,13,45};
     }
 
 @DataProvider(name = "incorrect_Books")
@@ -30,7 +30,7 @@ public Object[]incorrectID(){
     public void checkBookID(int ID){
         getRequest(baseURL, checkBookUrl, ID,200);
     }
-    @Test(dataProvider = "IncorrectIDBooks")
+    @Test(dataProvider = "incorrect_Books")
     public void incorrect_Books(int ID){
     getRequest(baseURL,checkBookUrl,ID,404);
     }

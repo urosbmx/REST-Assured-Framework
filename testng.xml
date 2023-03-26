@@ -4,7 +4,7 @@
        <class name="create_place"></class>
        <class name="add_book_store"></class>
        <class name="check_book_value"></class>
-<!--       <class name="checkMultyBooks"></class>-->
+       <class name="checkMultyBooks"></class>
        <class name="create_place"></class>
        <class name="delete_place"></class>
        <class name="get_data_for_place"></class>
