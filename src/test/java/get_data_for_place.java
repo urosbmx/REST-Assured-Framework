@@ -5,7 +5,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import funcionality.createPlace;
 import  funcionality.ReUsableMethod;
-
+import io.restassured.filter.log.RequestLoggingFilter;
 public class get_data_for_place {
     String placeID = createPlace.createPlaceCall();
 

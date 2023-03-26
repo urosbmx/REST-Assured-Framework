@@ -1,16 +1,14 @@
 import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.util.Random;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import  funcionality.ReUsableMethod;
 
 import  files.payload;
-import  files.addNewBook;
+
 
 public class add_book_store {
 
@@ -19,9 +17,9 @@ public class add_book_store {
     Faker faker = new Faker();
     String name = faker.name().firstName();
     Random random = new Random();
-    int rNumber = random.nextInt(180);
 
-    @Test
+
+    @Test()
  public void BookStore_AddBook(){
         RestAssured.baseURI = baseURL;
         given().log().all()
@@ -72,7 +70,7 @@ public class add_book_store {
                 .assertThat()
                 .statusCode(200).extract().response().asString();
                 JsonPath js = ReUsableMethod.JsonConvert(ressponses);
-                String ID = js.get("ID");
+//                String ID = js.get("ID");
 
     }
 

@@ -23,7 +23,8 @@ public class create_place {
         given().log().all().queryParam("key","qaclick123")
                 .header("Content-Type","application/json")
                 .body(payload.addPlace())
-                .when().post("maps/api/place/add/json")
+                .when()
+                .post("maps/api/place/add/json")
                 .then().log().all()
                 .assertThat()
                 .statusCode(200);
