@@ -1,3 +1,5 @@
+package tests.test_for_books;
+
 import com.github.javafaker.Faker;
 import funcionality.ReUsableMethod;
 import io.restassured.RestAssured;
@@ -16,10 +18,10 @@ public class check_book_value {
     Faker faker = new Faker();
     String name = faker.name().firstName();
     Random random = new Random();
-    int rNumber = random.nextInt(180);
+    int rNumber = random.nextInt(480);
     String dinamicPayLoad ="{\n" +
             "\n" +
-            "\"name\":\"Learn Appium Automation with "+name+"\",\n" +
+            "\"name\":\"Uros-Test- Appium Automation with "+name+random+"\",\n" +
             "\"isbn\":\"\",\n" +
             "\"aisle\":\""+rNumber+"\",\n" +
             "\"author\":\"John foe\"\n" +
@@ -45,9 +47,6 @@ public class check_book_value {
             .then().log().all()
             .assertThat()
             .statusCode(200);
-
-
-
 
     }
 

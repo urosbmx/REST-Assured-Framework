@@ -1,3 +1,5 @@
+package tests.test_for_books;
+
 import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;

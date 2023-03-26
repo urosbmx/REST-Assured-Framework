@@ -1,3 +1,5 @@
+package tests.fake_google_maps_api;
+
 import files.payload;
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;

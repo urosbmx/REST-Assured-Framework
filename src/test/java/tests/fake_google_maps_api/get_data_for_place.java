@@ -1,3 +1,5 @@
+package tests.fake_google_maps_api;
+
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 
@@ -5,7 +7,6 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import funcionality.createPlace;
 import  funcionality.ReUsableMethod;
-import io.restassured.filter.log.RequestLoggingFilter;
 public class get_data_for_place {
     String placeID = createPlace.createPlaceCall();
 
@@ -29,15 +30,15 @@ public class get_data_for_place {
     public  void TestCase02_With_Corect_PlaceID(){
 
         RestAssured.baseURI="http://rahulshettyacademy.com";
-//        given().log().all()
-//                .queryParam("place_id","2175b1ccb05886762d0ce7e8b140c51c")
-//                .queryParam("key","qaclick123")
-//                .header("Content-Type","application/json")
-//                .when().get("/maps/api/place/get/json")
-//                .then()
-//                .log()
-//                .all()
-//                .statusCode(200);
+        given().log().all()
+                .queryParam("place_id","2175b1ccb05886762d0ce7e8b140c51c")
+                .queryParam("key","qaclick123")
+                .header("Content-Type","application/json")
+                .when().get("/maps/api/place/get/json")
+                .then()
+                .log()
+                .all()
+                .statusCode(200);
 //How to get respons from API
         String getJsonBody =
                 given()
