@@ -5,10 +5,6 @@ import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 import funcionality.createPlace;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
@@ -77,25 +73,6 @@ public class create_place {
                 .then().assertThat().log().all().statusCode(200)
                 .body("address",equalTo("Radnicka 71a"));
     }
-
-
-    @Test
-    public void TestCase05() throws IOException {
-        given()
-                .log()
-                .all()
-                .queryParam("place_id",placeID)
-                .queryParam("key","qaclick123")
-                .header("Content-Type","application/json")
-                .body(new String(Files.readAllBytes(Paths.get("/Users/uroskatanic/AquaProjects/REST-Assured-Framework/src/test/java/files/test.json"))))
-                .then().log().all();
-    }
-
-
-
-
-
-
 
 
 }
