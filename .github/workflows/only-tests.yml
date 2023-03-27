@@ -24,7 +24,7 @@ jobs:
             maven-version: 3.8.2
 
       - name: Run the Maven verify phase
-        run: mvn -version
+        run: mvn test
 
 
 

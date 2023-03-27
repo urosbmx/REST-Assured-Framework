@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="11.422" tests="26" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="12.53" tests="26" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
@@ -44,7 +44,7 @@
     <property name="java.class.path" value="C:\Program Files\Maven\apache-maven-3.9.1\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -63,30 +63,30 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="BookStore_AddBook" classname="tests.test_for_books.add_book_store" time="0.459"/>
-  <testcase name="BookStore_Check_message" classname="tests.test_for_books.add_book_store" time="0.365"/>
-  <testcase name="BookStore_happyPath" classname="tests.test_for_books.add_book_store" time="0.324"/>
-  <testcase name="BookStore_takeValue" classname="tests.test_for_books.add_book_store" time="0.318"/>
-  <testcase name="check_book_name" classname="tests.test_for_books.check_book_value" time="0.718"/>
-  <testcase name="check_missing_book" classname="tests.test_for_books.check_book_value" time="0.354"/>
-  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.311"/>
-  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.313"/>
-  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.324"/>
+  <testcase name="BookStore_AddBook" classname="tests.test_for_books.add_book_store" time="0.437"/>
+  <testcase name="BookStore_Check_message" classname="tests.test_for_books.add_book_store" time="0.362"/>
+  <testcase name="BookStore_happyPath" classname="tests.test_for_books.add_book_store" time="0.338"/>
+  <testcase name="BookStore_takeValue" classname="tests.test_for_books.add_book_store" time="0.332"/>
+  <testcase name="check_book_name" classname="tests.test_for_books.check_book_value" time="0.666"/>
+  <testcase name="check_missing_book" classname="tests.test_for_books.check_book_value" time="0.332"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.32"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.312"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.312"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.331"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.314"/>
   <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.321"/>
-  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.317"/>
-  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.335"/>
-  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.313"/>
-  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.305"/>
-  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.317"/>
-  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.374"/>
-  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.283"/>
-  <testcase name="TestCase01_Get_Data_for_Place" classname="tests.fake_google_maps_api.get_data_for_place" time="0.828"/>
-  <testcase name="TestCase02_With_Corect_PlaceID" classname="tests.fake_google_maps_api.get_data_for_place" time="1.566"/>
-  <testcase name="testCase03_PlaceID_New" classname="tests.fake_google_maps_api.get_data_for_place" time="0.757"/>
-  <testcase name="TestCase01" classname="tests.fake_google_maps_api.create_place" time="0.3"/>
-  <testcase name="TestCase02" classname="tests.fake_google_maps_api.create_place" time="0.29"/>
-  <testcase name="TestCase03" classname="tests.fake_google_maps_api.create_place" time="1.056"/>
-  <testcase name="TestCase04" classname="tests.fake_google_maps_api.create_place" time="0.764"/>
-  <testcase name="testCase01DeleteJustCreatedPlace" classname="tests.fake_google_maps_api.delete_place" time="1.415"/>
-  <testcase name="testCase02DeleteNotExistingPlaceID" classname="tests.fake_google_maps_api.delete_place" time="1.292"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.514"/>
+  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.348"/>
+  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.307"/>
+  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.315"/>
+  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.35"/>
+  <testcase name="TestCase01_Get_Data_for_Place" classname="tests.fake_google_maps_api.get_data_for_place" time="0.833"/>
+  <testcase name="TestCase02_With_Corect_PlaceID" classname="tests.fake_google_maps_api.get_data_for_place" time="1.495"/>
+  <testcase name="testCase03_PlaceID_New" classname="tests.fake_google_maps_api.get_data_for_place" time="0.754"/>
+  <testcase name="TestCase01" classname="tests.fake_google_maps_api.create_place" time="0.29"/>
+  <testcase name="TestCase02" classname="tests.fake_google_maps_api.create_place" time="0.3"/>
+  <testcase name="TestCase03" classname="tests.fake_google_maps_api.create_place" time="1.506"/>
+  <testcase name="TestCase04" classname="tests.fake_google_maps_api.create_place" time="1.024"/>
+  <testcase name="testCase01DeleteJustCreatedPlace" classname="tests.fake_google_maps_api.delete_place" time="1.95"/>
+  <testcase name="testCase02DeleteNotExistingPlaceID" classname="tests.fake_google_maps_api.delete_place" time="1.243"/>
 </testsuite>
