@@ -1,4 +1,4 @@
-name: Only Tests
+name: Regresion test
 
 
 on:
@@ -23,7 +23,7 @@ jobs:
         with:
             maven-version: 3.8.2
 
-      - name: Run the Maven verify phase
+      - name: Set UP All and run test
         run: mvn clean install
 
 
