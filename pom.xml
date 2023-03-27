@@ -43,7 +43,7 @@
                 <configuration>
                     <skipTests>false</skipTests>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>smoke.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -67,7 +67,7 @@
                         <version>2.18.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>testng.xml</suiteXmlFile>
+                                <suiteXmlFile>smoke.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
