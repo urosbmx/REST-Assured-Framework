@@ -17,12 +17,13 @@ jobs:
           java-version: 11
           distribution: 'adopt'
 
+
       - name: Set up Maven
         uses: stCarolas/setup-maven@v4.5
         with:
             maven-version: 3.8.2
 
-      - name: All the tests are run
-        run: mvn  install
+      - name: Run the Maven verify phase
+        run: mvn --batch-mode --update-snapshots verify
 
 
