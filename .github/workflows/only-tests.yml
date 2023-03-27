@@ -1,4 +1,4 @@
-name: Smoke test
+name: Regression test
 
 
 on:
