@@ -1,0 +1,28 @@
+name: Only Tests
+
+
+on:
+  push:
+
+jobs:
+  run-all-test:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: 11
+          distribution: 'adopt'
+
+      - name: Set up Maven
+        uses: thermofisher/setup-maven@v1.0.0
+        with:
+            maven-version: 3.8.2
+
+      - name: All the tests are run
+        run: mvn clean test
+
+
