@@ -2,8 +2,8 @@ name: Regression test
 
 
 on:
-  push:
-
+  schedule:
+    - cron: "*/5 * * * *"
 jobs:
   run-all-test:
     runs-on: self-hosted
