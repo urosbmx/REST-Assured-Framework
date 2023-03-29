@@ -5,10 +5,7 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import org.testng.annotations.Test;
 import java.util.Random;
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-import  funcionality.ReUsableMethod;
-
+import static requests.POST_Request.POSTRequest;
 import  files.payload;
 
 
@@ -23,58 +20,23 @@ public class add_book_store {
 
 
     @Test()
- public void BookStore_AddBook(){
-        RestAssured.baseURI = baseURL;
-        given().log().all()
-                .header("Content-Type","application/json")
-                .body(payload.addBook())
-                .when().post(addBookUrl)
-                .then().log().all()
-                .assertThat()
-                .statusCode(404);
+ public void Existing_book(){
+        POSTRequest(baseURL,"application/json","","",payload.addBook(),addBookUrl,true,404,"msg","Add Book operation failed, looks like the book already exists");
+    }
+@Test()
+public void BookStore_AddBook_Status(){
+    POSTRequest(baseURL,"application/json","","",files.addNewBook.addBooks(name,random),addBookUrl,true,200,"","");
+}
 
-
-
- }
- @Test
-
- public void BookStore_Check_message(){
-        RestAssured.baseURI = baseURL;
-        given().log().all()
-                .header("Content-Type", "application/json")
-                .body(payload.addBook())
-                .when().post(addBookUrl)
-                .then().log().all()
-                .assertThat()
-                .body("msg",equalTo("Add Book operation failed, looks like the book already exists"));
-
- }
-
-@Test
- public  void  BookStore_happyPath(){
-        RestAssured.baseURI=baseURL;
-        given().log().all()
-                .header("Content-Type", "application/json")
-                .body(files.addNewBook.addBooks(name,random))
-                 .when().post(addBookUrl)
-                .then().log().all()
-                .assertThat()
-                .statusCode(200);
+    @Test()
+    public void BookStore_AddBook_Msg(){
+        POSTRequest(baseURL,"application/json","","",files.addNewBook.addBooks(name,random),addBookUrl,true,200,"Msg","successfully added");
     }
 
-    @Test
-    public void BookStore_takeValue(){
-        RestAssured.baseURI = baseURL;
-        String ressponses = given().log().all()
-                .header("Content-Type","application/json")
-                .body(files.addNewBook.addBooks(name,random))
-                .when().post(addBookUrl)
-                .then().log().all()
-                .assertThat()
-                .statusCode(200).extract().response().asString();
-                JsonPath js = ReUsableMethod.JsonConvert(ressponses);
-//                String ID = js.get("ID");
-
+    @Test()
+    public void BookStore_AddBook_ID(){
+        POSTRequest(baseURL,"application/json","","",files.addNewBook.addBooks(name,random),addBookUrl,true,200,"ID","bcd"+random);
     }
+
 
 }
