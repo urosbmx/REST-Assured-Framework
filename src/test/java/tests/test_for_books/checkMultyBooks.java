@@ -1,40 +1,37 @@
 package tests.test_for_books;
-
-import com.github.javafaker.Faker;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static requests.GET_Request.getRequest;
+import static requests.GET_Request.GETRequest;
+
 
 import java.util.Random;
 
 public class checkMultyBooks {
     String baseURL ="http://216.10.245.166/";
-    String addBookUrl = "Library/Addbook.php";
-    String  checkBookUrl = "Library/GetBook.php?ID=" ;
-    Faker faker = new Faker();
-    String name = faker.name().firstName();
-    Random random = new Random();
-    int rNumber = random.nextInt(180);
+    String  checkBookUrl = "Library/GetBook.php" ;
+
 
 
 @DataProvider(name = "CorectIDBooks")
     public Object[]idData(){
-        return new Object[] {45,21,32,22,11,13,45};
+        return new Object[] {"45","21","32","22","11","13","45"};
     }
 
 @DataProvider(name = "incorrect_Books")
 public Object[]incorrectID(){
-    return new Object[] {4221,3321,0022,3123};
+    return new Object[] {"4221","3321","0022","3123"};
 }
 
     @Test(dataProvider = "CorectIDBooks")
-    public void checkBookID(int ID){
-        getRequest(baseURL, checkBookUrl, ID,200);
+    public void checkBookID(String ID){
+        GETRequest(baseURL,"application/json",checkBookUrl,"ID",ID,true,200,"","");
     }
     @Test(dataProvider = "incorrect_Books")
-    public void incorrect_Books(int ID){
-    getRequest(baseURL,checkBookUrl,ID,404);
+    public void incorrect_Books(String ID){
+
+        GETRequest(baseURL,"application/json",checkBookUrl,"ID",ID,true,404,"msg","The book by requested bookid / author name does not exists!");
     }
+
 
 }
