@@ -9,6 +9,7 @@
        <class name="tests.fake_google_maps_api.get_data_for_place"></class>
        <class name="tests.fake_google_maps_api.create_place"></class>
        <class name="tests.fake_google_maps_api.delete_place"></class>
+       <class name="tests.fake_google_maps_api.update_place"></class>
 
    </classes>
 </test>

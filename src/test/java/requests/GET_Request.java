@@ -43,7 +43,7 @@ public class GET_Request {
 
 
                 } else {
-                    Assert.fail("Wrong status code");
+                    Assert.fail("Wrong status code expected"+ expectStatusCode + " received" + responseCode);
                 }
 
             }
