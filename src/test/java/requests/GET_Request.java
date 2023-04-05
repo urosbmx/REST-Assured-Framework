@@ -13,7 +13,6 @@ public class GET_Request {
             response = expect()
                     .given()
                     .baseUri(baseURL)
-                    .header("Content-Type", header)
                     .queryParam(queryParametar, queryValue)
                     .log()
                     .all()

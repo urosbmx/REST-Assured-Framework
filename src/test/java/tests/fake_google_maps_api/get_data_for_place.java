@@ -17,6 +17,7 @@ public class get_data_for_place {
 
     }
 
+
     @Test
     public void TestCase02_Check_Name() {
         GETRequest(URL, "application/json", path, "place_id", placeID, true, 200, "name", "Frontline house");
