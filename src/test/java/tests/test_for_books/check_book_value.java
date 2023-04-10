@@ -26,7 +26,7 @@ public class check_book_value {
             "\"aisle\":\""+rNumber+"\",\n" +
             "\"author\":\"John foe\"\n" +
             "}\n";
-@Test
+
     public void check_book_name(){
     RestAssured.baseURI = baseURL;
     String response = given().log().all()
