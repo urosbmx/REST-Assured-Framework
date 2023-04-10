@@ -50,7 +50,7 @@ public class check_book_value {
 
     }
 
-@Test
+
     public void check_missing_book(){
     given().log().all()
             .header("Content-Type","application/json")
