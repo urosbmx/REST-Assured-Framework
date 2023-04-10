@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">All Test Suite</span>
+              <span class="suite-name border-failed">All Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
-                    <span>C:\Users\urosb\IdeaProjects\REST-Assured-Framework\testng.xml</span>
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">26 methods,   26 passed</span>
+                    <span class="method-stats">32 methods, 1 failed,   31 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.check_book_value" class="method navigator-link" hash-for-method="check_book_name">check_book_name</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +117,22 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.add_book_store" class="method navigator-link" hash-for-method="BookStore_AddBook">BookStore_AddBook</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.add_book_store" class="method navigator-link" hash-for-method="BookStore_AddBook_ID">BookStore_AddBook_ID</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.add_book_store" class="method navigator-link" hash-for-method="BookStore_Check_message">BookStore_Check_message</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.add_book_store" class="method navigator-link" hash-for-method="BookStore_AddBook_Msg">BookStore_AddBook_Msg</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.add_book_store" class="method navigator-link" hash-for-method="BookStore_happyPath">BookStore_happyPath</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.add_book_store" class="method navigator-link" hash-for-method="BookStore_AddBook_Status">BookStore_AddBook_Status</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.add_book_store" class="method navigator-link" hash-for-method="BookStore_takeValue">BookStore_takeValue</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.add_book_store" class="method navigator-link" hash-for-method="Existing_book">Existing_book</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,7 +152,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.fake_google_maps_api.get_data_for_place" class="method navigator-link" hash-for-method="TestCase02_With_Corect_PlaceID">TestCase02_With_Corect_PlaceID</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.fake_google_maps_api.get_data_for_place" class="method navigator-link" hash-for-method="TestCase02_Check_Name">TestCase02_Check_Name</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -148,12 +162,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.fake_google_maps_api.create_place" class="method navigator-link" hash-for-method="TestCase04">TestCase04</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.fake_google_maps_api.update_place" class="method navigator-link" hash-for-method="TestCase03">TestCase03</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.checkMultyBooks" class="method navigator-link" hash-for-method="checkBookID(21)">checkBookID(21)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.checkMultyBooks" class="method navigator-link" hash-for-method="checkBookID(32)">checkBookID(32)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -183,12 +197,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.checkMultyBooks" class="method navigator-link" hash-for-method="checkBookID(32)">checkBookID(32)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.check_book_value" class="method navigator-link" hash-for-method="check_book_name">check_book_name</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.checkMultyBooks" class="method navigator-link" hash-for-method="checkBookID(21)">checkBookID(21)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -198,7 +207,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.fake_google_maps_api.get_data_for_place_POJO" class="method navigator-link" hash-for-method="get_data">get_data</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.checkMultyBooks" class="method navigator-link" hash-for-method="incorrect_Books(3321)">incorrect_Books(3321)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.checkMultyBooks" class="method navigator-link" hash-for-method="incorrect_Books(4221)">incorrect_Books(4221)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -208,12 +227,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.checkMultyBooks" class="method navigator-link" hash-for-method="incorrect_Books(18)">incorrect_Books(18)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.checkMultyBooks" class="method navigator-link" hash-for-method="incorrect_Books(4221)">incorrect_Books(4221)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.test_for_books.checkMultyBooks" class="method navigator-link" hash-for-method="incorrect_Books(0022)">incorrect_Books(0022)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -231,6 +245,31 @@
                         <a href="#" panel-name="suite-All_Test_Suite" title="tests.fake_google_maps_api.get_data_for_place" class="method navigator-link" hash-for-method="testCase03_PlaceID_New">testCase03_PlaceID_New</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.fake_google_maps_api.get_data_for_place" class="method navigator-link" hash-for-method="testCase04_Check_address">testCase04_Check_address</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.fake_google_maps_api.get_data_for_place" class="method navigator-link" hash-for-method="testCase05_Check_types">testCase05_Check_types</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.fake_google_maps_api.get_data_for_place" class="method navigator-link" hash-for-method="testCase06_Check_language">testCase06_Check_language</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.fake_google_maps_api.get_data_for_place" class="method navigator-link" hash-for-method="testCase07_Check_website">testCase07_Check_website</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="tests.fake_google_maps_api.get_data_for_place" class="method navigator-link" hash-for-method="testCase08_Ceheck_body">testCase08_Ceheck_body</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-All_Test_Suite -->
                   </li>
                 </ul>
@@ -243,6 +282,167 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.test_for_books.check_book_value</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_book_name">
+                  </a> <!-- check_book_name -->
+                  <span class="method-name">check_book_name</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at tests.test_for_books.check_book_value.check_book_name(check_book_value.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.fake_google_maps_api.create_place</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase01">
+                  </a> <!-- TestCase01 -->
+                  <span class="method-name">TestCase01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase02">
+                  </a> <!-- TestCase02 -->
+                  <span class="method-name">TestCase02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase03">
+                  </a> <!-- TestCase03 -->
+                  <span class="method-name">TestCase03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.fake_google_maps_api.get_data_for_place_POJO</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_data">
+                  </a> <!-- get_data -->
+                  <span class="method-name">get_data</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.fake_google_maps_api.delete_place</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase01DeleteJustCreatedPlace">
+                  </a> <!-- testCase01DeleteJustCreatedPlace -->
+                  <span class="method-name">testCase01DeleteJustCreatedPlace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase02DeleteNotExistingPlaceID">
+                  </a> <!-- testCase02DeleteNotExistingPlaceID -->
+                  <span class="method-name">testCase02DeleteNotExistingPlaceID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.test_for_books.check_book_value</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_missing_book">
+                  </a> <!-- check_missing_book -->
+                  <span class="method-name">check_missing_book</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -258,9 +458,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TestCase02_With_Corect_PlaceID">
-                  </a> <!-- TestCase02_With_Corect_PlaceID -->
-                  <span class="method-name">TestCase02_With_Corect_PlaceID</span>
+                  <a name="TestCase02_Check_Name">
+                  </a> <!-- TestCase02_Check_Name -->
+                  <span class="method-name">TestCase02_Check_Name</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -268,6 +468,92 @@
                   <a name="testCase03_PlaceID_New">
                   </a> <!-- testCase03_PlaceID_New -->
                   <span class="method-name">testCase03_PlaceID_New</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase04_Check_address">
+                  </a> <!-- testCase04_Check_address -->
+                  <span class="method-name">testCase04_Check_address</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase05_Check_types">
+                  </a> <!-- testCase05_Check_types -->
+                  <span class="method-name">testCase05_Check_types</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase06_Check_language">
+                  </a> <!-- testCase06_Check_language -->
+                  <span class="method-name">testCase06_Check_language</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase07_Check_website">
+                  </a> <!-- testCase07_Check_website -->
+                  <span class="method-name">testCase07_Check_website</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase08_Ceheck_body">
+                  </a> <!-- testCase08_Ceheck_body -->
+                  <span class="method-name">testCase08_Ceheck_body</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.fake_google_maps_api.update_place</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase03">
+                  </a> <!-- TestCase03 -->
+                  <span class="method-name">TestCase03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.test_for_books.add_book_store</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookStore_AddBook_ID">
+                  </a> <!-- BookStore_AddBook_ID -->
+                  <span class="method-name">BookStore_AddBook_ID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookStore_AddBook_Msg">
+                  </a> <!-- BookStore_AddBook_Msg -->
+                  <span class="method-name">BookStore_AddBook_Msg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookStore_AddBook_Status">
+                  </a> <!-- BookStore_AddBook_Status -->
+                  <span class="method-name">BookStore_AddBook_Status</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Existing_book">
+                  </a> <!-- Existing_book -->
+                  <span class="method-name">Existing_book</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -280,10 +566,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkBookID(21)">
-                  </a> <!-- checkBookID(21) -->
+                  <a name="checkBookID(32)">
+                  </a> <!-- checkBookID(32) -->
                   <span class="method-name">checkBookID</span>
-                  <span class="parameters">(21)</span>
+                  <span class="parameters">(32)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -328,10 +614,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="checkBookID(32)">
-                  </a> <!-- checkBookID(32) -->
+                  <a name="checkBookID(21)">
+                  </a> <!-- checkBookID(21) -->
                   <span class="method-name">checkBookID</span>
-                  <span class="parameters">(32)</span>
+                  <span class="parameters">(21)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -344,6 +630,14 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="incorrect_Books(4221)">
+                  </a> <!-- incorrect_Books(4221) -->
+                  <span class="method-name">incorrect_Books</span>
+                  <span class="parameters">(4221)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="incorrect_Books(3123)">
                   </a> <!-- incorrect_Books(3123) -->
                   <span class="method-name">incorrect_Books</span>
@@ -352,134 +646,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="incorrect_Books(18)">
-                  </a> <!-- incorrect_Books(18) -->
+                  <a name="incorrect_Books(0022)">
+                  </a> <!-- incorrect_Books(0022) -->
                   <span class="method-name">incorrect_Books</span>
-                  <span class="parameters">(18)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="incorrect_Books(4221)">
-                  </a> <!-- incorrect_Books(4221) -->
-                  <span class="method-name">incorrect_Books</span>
-                  <span class="parameters">(4221)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.fake_google_maps_api.create_place</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestCase01">
-                  </a> <!-- TestCase01 -->
-                  <span class="method-name">TestCase01</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestCase02">
-                  </a> <!-- TestCase02 -->
-                  <span class="method-name">TestCase02</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestCase03">
-                  </a> <!-- TestCase03 -->
-                  <span class="method-name">TestCase03</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestCase04">
-                  </a> <!-- TestCase04 -->
-                  <span class="method-name">TestCase04</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.test_for_books.add_book_store</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="BookStore_AddBook">
-                  </a> <!-- BookStore_AddBook -->
-                  <span class="method-name">BookStore_AddBook</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="BookStore_Check_message">
-                  </a> <!-- BookStore_Check_message -->
-                  <span class="method-name">BookStore_Check_message</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="BookStore_happyPath">
-                  </a> <!-- BookStore_happyPath -->
-                  <span class="method-name">BookStore_happyPath</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="BookStore_takeValue">
-                  </a> <!-- BookStore_takeValue -->
-                  <span class="method-name">BookStore_takeValue</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.test_for_books.check_book_value</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="check_book_name">
-                  </a> <!-- check_book_name -->
-                  <span class="method-name">check_book_name</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="check_missing_book">
-                  </a> <!-- check_missing_book -->
-                  <span class="method-name">check_missing_book</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.fake_google_maps_api.delete_place</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCase01DeleteJustCreatedPlace">
-                  </a> <!-- testCase01DeleteJustCreatedPlace -->
-                  <span class="method-name">testCase01DeleteJustCreatedPlace</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCase02DeleteNotExistingPlaceID">
-                  </a> <!-- testCase02DeleteNotExistingPlaceID -->
-                  <span class="method-name">testCase02DeleteNotExistingPlaceID</span>
+                  <span class="parameters">(0022)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -487,7 +657,7 @@
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\urosb\IdeaProjects\REST-Assured-Framework\testng.xml</span>
+            <span class="header-content">/Users/uroskatanic/IdeaProjects/REST-Assured-Framework/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -502,6 +672,8 @@
       &lt;class name=&quot;tests.fake_google_maps_api.get_data_for_place&quot;/&gt;
       &lt;class name=&quot;tests.fake_google_maps_api.create_place&quot;/&gt;
       &lt;class name=&quot;tests.fake_google_maps_api.delete_place&quot;/&gt;
+      &lt;class name=&quot;tests.fake_google_maps_api.update_place&quot;/&gt;
+      &lt;class name=&quot;tests.fake_google_maps_api.get_data_for_place_POJO&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- /Users/uroskatanic/IdeaProjects/REST-Assured-Framework --&gt;
 &lt;/suite&gt; &lt;!-- All Test Suite --&gt;
@@ -515,7 +687,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">/Users/uroskatanic/IdeaProjects/REST-Assured-Framework (6 classes)</span>
+                <span class="test-name">/Users/uroskatanic/IdeaProjects/REST-Assured-Framework (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -541,116 +713,140 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(26);
+data.addRows(32);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCase01DeleteJustCreatedPlace')
 data.setCell(0, 2, 'tests.fake_google_maps_api.delete_place')
-data.setCell(0, 3, 1958);
+data.setCell(0, 3, 1567);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TestCase03')
-data.setCell(1, 2, 'tests.fake_google_maps_api.create_place')
-data.setCell(1, 3, 1506);
+data.setCell(1, 1, 'testCase02DeleteNotExistingPlaceID')
+data.setCell(1, 2, 'tests.fake_google_maps_api.delete_place')
+data.setCell(1, 3, 1382);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TestCase02_With_Corect_PlaceID')
-data.setCell(2, 2, 'tests.fake_google_maps_api.get_data_for_place')
-data.setCell(2, 3, 1494);
+data.setCell(2, 1, 'TestCase03')
+data.setCell(2, 2, 'tests.fake_google_maps_api.update_place')
+data.setCell(2, 3, 1288);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCase02DeleteNotExistingPlaceID')
-data.setCell(3, 2, 'tests.fake_google_maps_api.delete_place')
-data.setCell(3, 3, 1242);
+data.setCell(3, 1, 'TestCase01_Get_Data_for_Place')
+data.setCell(3, 2, 'tests.fake_google_maps_api.get_data_for_place')
+data.setCell(3, 3, 1182);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TestCase04')
-data.setCell(4, 2, 'tests.fake_google_maps_api.create_place')
-data.setCell(4, 3, 1020);
+data.setCell(4, 1, 'testCase04_Check_address')
+data.setCell(4, 2, 'tests.fake_google_maps_api.get_data_for_place')
+data.setCell(4, 3, 1032);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TestCase01_Get_Data_for_Place')
-data.setCell(5, 2, 'tests.fake_google_maps_api.get_data_for_place')
-data.setCell(5, 3, 841);
+data.setCell(5, 1, 'get_data')
+data.setCell(5, 2, 'tests.fake_google_maps_api.get_data_for_place_POJO')
+data.setCell(5, 3, 1027);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testCase03_PlaceID_New')
 data.setCell(6, 2, 'tests.fake_google_maps_api.get_data_for_place')
-data.setCell(6, 3, 752);
+data.setCell(6, 3, 981);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'check_book_name')
-data.setCell(7, 2, 'tests.test_for_books.check_book_value')
-data.setCell(7, 3, 676);
+data.setCell(7, 1, 'TestCase02_Check_Name')
+data.setCell(7, 2, 'tests.fake_google_maps_api.get_data_for_place')
+data.setCell(7, 3, 927);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'checkBookID')
-data.setCell(8, 2, 'tests.test_for_books.checkMultyBooks')
-data.setCell(8, 3, 513);
+data.setCell(8, 1, 'testCase07_Check_website')
+data.setCell(8, 2, 'tests.fake_google_maps_api.get_data_for_place')
+data.setCell(8, 3, 923);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'BookStore_AddBook')
-data.setCell(9, 2, 'tests.test_for_books.add_book_store')
-data.setCell(9, 3, 438);
+data.setCell(9, 1, 'testCase06_Check_language')
+data.setCell(9, 2, 'tests.fake_google_maps_api.get_data_for_place')
+data.setCell(9, 3, 923);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'BookStore_Check_message')
-data.setCell(10, 2, 'tests.test_for_books.add_book_store')
-data.setCell(10, 3, 362);
+data.setCell(10, 1, 'testCase05_Check_types')
+data.setCell(10, 2, 'tests.fake_google_maps_api.get_data_for_place')
+data.setCell(10, 3, 917);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'incorrect_Books')
-data.setCell(11, 2, 'tests.test_for_books.checkMultyBooks')
-data.setCell(11, 3, 343);
+data.setCell(11, 1, 'check_book_name')
+data.setCell(11, 2, 'tests.test_for_books.check_book_value')
+data.setCell(11, 3, 869);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'incorrect_Books')
-data.setCell(12, 2, 'tests.test_for_books.checkMultyBooks')
-data.setCell(12, 3, 338);
+data.setCell(12, 1, 'BookStore_AddBook_ID')
+data.setCell(12, 2, 'tests.test_for_books.add_book_store')
+data.setCell(12, 3, 476);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'check_missing_book')
-data.setCell(13, 2, 'tests.test_for_books.check_book_value')
-data.setCell(13, 3, 332);
+data.setCell(13, 1, 'checkBookID')
+data.setCell(13, 2, 'tests.test_for_books.checkMultyBooks')
+data.setCell(13, 3, 469);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'checkBookID')
-data.setCell(14, 2, 'tests.test_for_books.checkMultyBooks')
-data.setCell(14, 3, 331);
+data.setCell(14, 1, 'BookStore_AddBook_Status')
+data.setCell(14, 2, 'tests.test_for_books.add_book_store')
+data.setCell(14, 3, 440);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'BookStore_takeValue')
+data.setCell(15, 1, 'Existing_book')
 data.setCell(15, 2, 'tests.test_for_books.add_book_store')
-data.setCell(15, 3, 331);
+data.setCell(15, 3, 436);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'BookStore_happyPath')
-data.setCell(16, 2, 'tests.test_for_books.add_book_store')
-data.setCell(16, 3, 326);
+data.setCell(16, 1, 'check_missing_book')
+data.setCell(16, 2, 'tests.test_for_books.check_book_value')
+data.setCell(16, 3, 435);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'checkBookID')
-data.setCell(17, 2, 'tests.test_for_books.checkMultyBooks')
-data.setCell(17, 3, 320);
+data.setCell(17, 1, 'BookStore_AddBook_Msg')
+data.setCell(17, 2, 'tests.test_for_books.add_book_store')
+data.setCell(17, 3, 425);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'incorrect_Books')
+data.setCell(18, 1, 'checkBookID')
 data.setCell(18, 2, 'tests.test_for_books.checkMultyBooks')
-data.setCell(18, 3, 318);
+data.setCell(18, 3, 425);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'checkBookID')
 data.setCell(19, 2, 'tests.test_for_books.checkMultyBooks')
-data.setCell(19, 3, 318);
+data.setCell(19, 3, 422);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'checkBookID')
 data.setCell(20, 2, 'tests.test_for_books.checkMultyBooks')
-data.setCell(20, 3, 317);
+data.setCell(20, 3, 419);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'incorrect_Books')
 data.setCell(21, 2, 'tests.test_for_books.checkMultyBooks')
-data.setCell(21, 3, 314);
+data.setCell(21, 3, 418);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'checkBookID')
 data.setCell(22, 2, 'tests.test_for_books.checkMultyBooks')
-data.setCell(22, 3, 313);
+data.setCell(22, 3, 415);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'checkBookID')
-data.setCell(23, 2, 'tests.test_for_books.checkMultyBooks')
-data.setCell(23, 3, 312);
+data.setCell(23, 1, 'TestCase01')
+data.setCell(23, 2, 'tests.fake_google_maps_api.create_place')
+data.setCell(23, 3, 411);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'TestCase02')
-data.setCell(24, 2, 'tests.fake_google_maps_api.create_place')
-data.setCell(24, 3, 298);
+data.setCell(24, 1, 'incorrect_Books')
+data.setCell(24, 2, 'tests.test_for_books.checkMultyBooks')
+data.setCell(24, 3, 409);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'TestCase01')
+data.setCell(25, 1, 'TestCase02')
 data.setCell(25, 2, 'tests.fake_google_maps_api.create_place')
-data.setCell(25, 3, 290);
+data.setCell(25, 3, 409);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'checkBookID')
+data.setCell(26, 2, 'tests.test_for_books.checkMultyBooks')
+data.setCell(26, 3, 409);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'incorrect_Books')
+data.setCell(27, 2, 'tests.test_for_books.checkMultyBooks')
+data.setCell(27, 3, 408);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'checkBookID')
+data.setCell(28, 2, 'tests.test_for_books.checkMultyBooks')
+data.setCell(28, 3, 402);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'incorrect_Books')
+data.setCell(29, 2, 'tests.test_for_books.checkMultyBooks')
+data.setCell(29, 3, 400);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'TestCase03')
+data.setCell(30, 2, 'tests.fake_google_maps_api.create_place')
+data.setCell(30, 3, 386);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testCase08_Ceheck_body')
+data.setCell(31, 2, 'tests.fake_google_maps_api.get_data_for_place')
+data.setCell(31, 3, 0);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -678,123 +874,155 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.test_for_books.add_book_store</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">BookStore_AddBook</span>
+                <span class="method-name">BookStore_AddBook_ID</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">BookStore_Check_message</span>
-                <span class="method-start">440 ms</span>
+                <span class="method-name">BookStore_AddBook_Msg</span>
+                <span class="method-start">478 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">BookStore_happyPath</span>
-                <span class="method-start">803 ms</span>
+                <span class="method-name">BookStore_AddBook_Status</span>
+                <span class="method-start">904 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">BookStore_takeValue</span>
-                <span class="method-start">1130 ms</span>
+                <span class="method-name">Existing_book</span>
+                <span class="method-start">1348 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.test_for_books.check_book_value</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">check_book_name</span>
-                <span class="method-start">1463 ms</span>
+                <span class="method-start">1786 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">check_missing_book</span>
-                <span class="method-start">2140 ms</span>
+                <span class="method-start">2658 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.test_for_books.checkMultyBooks</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkBookID(45)</span>
-                <span class="method-start">2475 ms</span>
+                <span class="method-start">3095 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkBookID(21)</span>
-                <span class="method-start">2794 ms</span>
+                <span class="method-start">3565 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkBookID(32)</span>
-                <span class="method-start">3106 ms</span>
+                <span class="method-start">3988 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkBookID(22)</span>
-                <span class="method-start">3419 ms</span>
+                <span class="method-start">4414 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkBookID(11)</span>
-                <span class="method-start">3750 ms</span>
+                <span class="method-start">4830 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkBookID(13)</span>
-                <span class="method-start">4068 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">checkBookID(45)</span>
-                <span class="method-start">4389 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">incorrect_Books(4221)</span>
-                <span class="method-start">4902 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">incorrect_Books(3321)</span>
                 <span class="method-start">5240 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">incorrect_Books(18)</span>
-                <span class="method-start">5558 ms</span>
+                <span class="method-name">checkBookID(45)</span>
+                <span class="method-start">5659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">incorrect_Books(4221)</span>
+                <span class="method-start">6063 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">incorrect_Books(3321)</span>
+                <span class="method-start">6482 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">incorrect_Books(0022)</span>
+                <span class="method-start">6883 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">incorrect_Books(3123)</span>
-                <span class="method-start">5872 ms</span>
+                <span class="method-start">7300 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.fake_google_maps_api.get_data_for_place</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TestCase01_Get_Data_for_Place</span>
-                <span class="method-start">6216 ms</span>
+                <span class="method-start">7710 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TestCase02_With_Corect_PlaceID</span>
-                <span class="method-start">7057 ms</span>
+                <span class="method-name">TestCase02_Check_Name</span>
+                <span class="method-start">8893 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCase03_PlaceID_New</span>
-                <span class="method-start">8552 ms</span>
+                <span class="method-start">9821 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCase04_Check_address</span>
+                <span class="method-start">10803 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCase05_Check_types</span>
+                <span class="method-start">11836 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCase06_Check_language</span>
+                <span class="method-start">12754 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCase07_Check_website</span>
+                <span class="method-start">13678 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCase08_Ceheck_body</span>
+                <span class="method-start">14602 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.fake_google_maps_api.create_place</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TestCase01</span>
-                <span class="method-start">9305 ms</span>
+                <span class="method-start">14603 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase02</span>
-                <span class="method-start">9596 ms</span>
+                <span class="method-start">15015 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestCase03</span>
-                <span class="method-start">9895 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestCase04</span>
-                <span class="method-start">11401 ms</span>
+                <span class="method-start">15425 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.fake_google_maps_api.delete_place</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testCase01DeleteJustCreatedPlace</span>
-                <span class="method-start">12421 ms</span>
+                <span class="method-start">15813 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCase02DeleteNotExistingPlaceID</span>
-                <span class="method-start">14379 ms</span>
+                <span class="method-start">17382 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.fake_google_maps_api.update_place</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestCase03</span>
+                <span class="method-start">18764 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.fake_google_maps_api.get_data_for_place_POJO</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">get_data</span>
+                <span class="method-start">20054 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

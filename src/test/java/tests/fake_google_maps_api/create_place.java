@@ -3,7 +3,8 @@ import files.payload;
 import org.testng.annotations.Test;
 import static requests.POST_Request.POSTRequest;
 
-public class create_place {
+
+public class create_place   {
 
 
     String URL = "http://rahulshettyacademy.com";
