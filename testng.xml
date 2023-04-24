@@ -11,6 +11,7 @@
        <class name="tests.fake_google_maps_api.delete_place"></class>
        <class name="tests.fake_google_maps_api.update_place"></class>
        <class name="tests.fake_google_maps_api.get_data_for_place_POJO"></class>
+       <class name="Google_Maps_POJO.first_test"></class>
 
    </classes>
 </test>
