@@ -7,11 +7,11 @@ on:
         required: true
         type: choice
         options:
-          - Ubuntu
-          - macOS
+          - ubuntu-latest
+          - macos-13
 jobs:
   run-smoke-test:
-    runs-on: [self-hosted, "${{ github.event.inputs.chosen-os }}"]
+    runs-on: "${{ github.event.inputs.chosen-os }}"
     steps:
       - name: Checkout
         uses: actions/checkout@v3
