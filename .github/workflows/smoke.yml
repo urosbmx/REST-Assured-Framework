@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 jobs:
   run-smoke-test:
-    runs-on: ubuntu-latest
+    runs-on: macos-13
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -15,13 +15,12 @@ jobs:
           java-version: 17
           distribution: 'adopt'
 
-
       - name: Set up Maven
         uses: stCarolas/setup-maven@v4.5
         with:
           maven-version: 3.8.2
 
-      - name: Set UP All and run test
+      - name: Set UP All and run smoke test
         run: mvn clean test -Dsurefire.suiteXmlFiles=smoke.xml
 
       - name: End of test
