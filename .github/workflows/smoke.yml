@@ -1,10 +1,17 @@
 name: Smoke
 
-on: workflow_dispatch
-
+on:
+  workflow_dispatch:
+    inputs:
+      chosen-os:
+        required: true
+        type: choice
+        options:
+          - Ubuntu
+          - macOS
 jobs:
   run-smoke-test:
-    runs-on: macos-13
+    runs-on: [self-hosted, "${{ github.event.inputs.chosen-os }}"]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
