@@ -1,6 +1,5 @@
-package Google_Maps_POJO;
+package tests.Google_Maps_POJO;
 
-import POJO_Class.ErrorMessages;
 import POJO_Class.Location;
 import POJO_Class.addPlace;
 import io.restassured.RestAssured;

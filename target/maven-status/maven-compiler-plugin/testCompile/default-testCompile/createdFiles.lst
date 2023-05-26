@@ -1,8 +1,11 @@
 files/payload.class
 files/addNewBook.class
+tests/Google_Maps_POJO/first_test.class
 tests/fake_google_maps_api/delete_place.class
+tests/google_maps_shema/google_maps.class
 files/bigJSonData.class
 tests/test_for_books/add_book_store.class
+POJO_Class/Location.class
 tests/test_for_books/checkMultyBooks.class
 funcionality/createPlace.class
 tests/fake_google_maps_api/get_data_for_place_POJO.class
@@ -12,6 +15,7 @@ tests/fake_google_maps_api/get_data_for_place.class
 tests/fake_google_maps_api/create_place.class
 funcionality/createJSONObject.class
 tests/fake_google_maps_api/update_place.class
+POJO_Class/addPlace.class
 requests/POST_Request.class
 tests/test_for_books/check_book_value.class
 requests/GET_Request.class
