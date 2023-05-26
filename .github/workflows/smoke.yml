@@ -3,7 +3,7 @@ name: Smoke
 on: workflow_dispatch
 
 jobs:
-  run-all-test:
+  run-smoke-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
