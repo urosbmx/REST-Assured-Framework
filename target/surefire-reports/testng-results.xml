@@ -1,228 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="31" passed="31" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-26T22:51:20 CEST" name="All Test Suite" finished-at="2023-04-26T22:51:45 CEST" duration-ms="24760">
+  <suite started-at="2023-05-26T22:24:00 CEST" name="All Test Suite" finished-at="2023-05-26T22:24:11 CEST" duration-ms="11260">
     <groups>
     </groups>
-    <test started-at="2023-04-26T22:51:20 CEST" name="/Users/uroskatanic/IdeaProjects/REST-Assured-Framework" finished-at="2023-04-26T22:51:45 CEST" duration-ms="24760">
+    <test started-at="2023-05-26T22:24:00 CEST" name="/Users/uroskatanic/IdeaProjects/REST-Assured-Framework" finished-at="2023-05-26T22:24:11 CEST" duration-ms="11260">
       <class name="tests.fake_google_maps_api.create_place">
-        <test-method signature="TestCase01()[pri:0, instance:tests.fake_google_maps_api.create_place@1de7f898]" started-at="2023-04-26T22:51:37 CEST" name="TestCase01" finished-at="2023-04-26T22:51:37 CEST" duration-ms="519" status="PASS">
+        <test-method signature="TestCase01()[pri:0, instance:tests.fake_google_maps_api.create_place@1e7ab390]" started-at="2023-05-26T22:24:07 CEST" name="TestCase01" finished-at="2023-05-26T22:24:07 CEST" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase01 -->
-        <test-method signature="TestCase02()[pri:0, instance:tests.fake_google_maps_api.create_place@1de7f898]" started-at="2023-04-26T22:51:37 CEST" name="TestCase02" finished-at="2023-04-26T22:51:38 CEST" duration-ms="534" status="PASS">
+        <test-method signature="TestCase02()[pri:0, instance:tests.fake_google_maps_api.create_place@1e7ab390]" started-at="2023-05-26T22:24:07 CEST" name="TestCase02" finished-at="2023-05-26T22:24:08 CEST" duration-ms="326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase02 -->
-        <test-method signature="TestCase03()[pri:0, instance:tests.fake_google_maps_api.create_place@1de7f898]" started-at="2023-04-26T22:51:38 CEST" name="TestCase03" finished-at="2023-04-26T22:51:38 CEST" duration-ms="502" status="PASS">
+        <test-method signature="TestCase03()[pri:0, instance:tests.fake_google_maps_api.create_place@1e7ab390]" started-at="2023-05-26T22:24:08 CEST" name="TestCase03" finished-at="2023-05-26T22:24:08 CEST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase03 -->
       </class> <!-- tests.fake_google_maps_api.create_place -->
-      <class name="tests.Google_Maps_POJO.first_test">
-        <test-method signature="testCase()[pri:0, instance:tests.Google_Maps_POJO.first_test@54f2df29]" started-at="2023-04-26T22:51:44 CEST" name="testCase" finished-at="2023-04-26T22:51:45 CEST" duration-ms="503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase -->
-      </class> <!-- tests.Google_Maps_POJO.first_test -->
-      <class name="tests.fake_google_maps_api.update_place">
-        <test-method signature="TestCase03()[pri:0, instance:tests.fake_google_maps_api.update_place@64bba0eb]" started-at="2023-04-26T22:51:41 CEST" name="TestCase03" finished-at="2023-04-26T22:51:43 CEST" duration-ms="1668" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase03 -->
-      </class> <!-- tests.fake_google_maps_api.update_place -->
-      <class name="tests.fake_google_maps_api.get_data_for_place_POJO">
-        <test-method signature="get_data()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place_POJO@25ae1f80]" started-at="2023-04-26T22:51:43 CEST" name="get_data" finished-at="2023-04-26T22:51:44 CEST" duration-ms="1331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_data -->
-      </class> <!-- tests.fake_google_maps_api.get_data_for_place_POJO -->
       <class name="tests.fake_google_maps_api.get_data_for_place">
-        <test-method signature="TestCase01_Get_Data_for_Place()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@7b1a30e5]" started-at="2023-04-26T22:51:29 CEST" name="TestCase01_Get_Data_for_Place" finished-at="2023-04-26T22:51:30 CEST" duration-ms="1191" status="PASS">
+        <test-method signature="TestCase01_Get_Data_for_Place()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@cb7fa71]" started-at="2023-05-26T22:24:00 CEST" name="TestCase01_Get_Data_for_Place" finished-at="2023-05-26T22:24:01 CEST" duration-ms="1255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase01_Get_Data_for_Place -->
-        <test-method signature="TestCase02_Check_Name()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@7b1a30e5]" started-at="2023-04-26T22:51:30 CEST" name="TestCase02_Check_Name" finished-at="2023-04-26T22:51:31 CEST" duration-ms="1077" status="PASS">
+        <test-method signature="TestCase02_Check_Name()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@cb7fa71]" started-at="2023-05-26T22:24:01 CEST" name="TestCase02_Check_Name" finished-at="2023-05-26T22:24:02 CEST" duration-ms="1005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase02_Check_Name -->
-        <test-method signature="testCase03_PlaceID_New()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@7b1a30e5]" started-at="2023-04-26T22:51:31 CEST" name="testCase03_PlaceID_New" finished-at="2023-04-26T22:51:32 CEST" duration-ms="1154" status="PASS">
+        <test-method signature="testCase03_PlaceID_New()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@cb7fa71]" started-at="2023-05-26T22:24:02 CEST" name="testCase03_PlaceID_New" finished-at="2023-05-26T22:24:03 CEST" duration-ms="944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase03_PlaceID_New -->
-        <test-method signature="testCase04_Check_address()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@7b1a30e5]" started-at="2023-04-26T22:51:32 CEST" name="testCase04_Check_address" finished-at="2023-04-26T22:51:33 CEST" duration-ms="1069" status="PASS">
+        <test-method signature="testCase04_Check_address()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@cb7fa71]" started-at="2023-05-26T22:24:03 CEST" name="testCase04_Check_address" finished-at="2023-05-26T22:24:04 CEST" duration-ms="972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase04_Check_address -->
-        <test-method signature="testCase05_Check_types()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@7b1a30e5]" started-at="2023-04-26T22:51:33 CEST" name="testCase05_Check_types" finished-at="2023-04-26T22:51:34 CEST" duration-ms="1146" status="PASS">
+        <test-method signature="testCase05_Check_types()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@cb7fa71]" started-at="2023-05-26T22:24:04 CEST" name="testCase05_Check_types" finished-at="2023-05-26T22:24:05 CEST" duration-ms="935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase05_Check_types -->
-        <test-method signature="testCase06_Check_language()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@7b1a30e5]" started-at="2023-04-26T22:51:34 CEST" name="testCase06_Check_language" finished-at="2023-04-26T22:51:36 CEST" duration-ms="1188" status="PASS">
+        <test-method signature="testCase06_Check_language()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@cb7fa71]" started-at="2023-05-26T22:24:05 CEST" name="testCase06_Check_language" finished-at="2023-05-26T22:24:06 CEST" duration-ms="1125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase06_Check_language -->
-        <test-method signature="testCase07_Check_website()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@7b1a30e5]" started-at="2023-04-26T22:51:36 CEST" name="testCase07_Check_website" finished-at="2023-04-26T22:51:37 CEST" duration-ms="1212" status="PASS">
+        <test-method signature="testCase07_Check_website()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@cb7fa71]" started-at="2023-05-26T22:24:06 CEST" name="testCase07_Check_website" finished-at="2023-05-26T22:24:07 CEST" duration-ms="1011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase07_Check_website -->
-        <test-method signature="testCase08_Ceheck_body()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@7b1a30e5]" started-at="2023-04-26T22:51:37 CEST" name="testCase08_Ceheck_body" finished-at="2023-04-26T22:51:37 CEST" duration-ms="0" status="PASS">
+        <test-method signature="testCase08_Ceheck_body()[pri:0, instance:tests.fake_google_maps_api.get_data_for_place@cb7fa71]" started-at="2023-05-26T22:24:07 CEST" name="testCase08_Ceheck_body" finished-at="2023-05-26T22:24:07 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase08_Ceheck_body -->
       </class> <!-- tests.fake_google_maps_api.get_data_for_place -->
       <class name="tests.fake_google_maps_api.delete_place">
-        <test-method signature="testCase01DeleteJustCreatedPlace()[pri:0, instance:tests.fake_google_maps_api.delete_place@74b1838]" started-at="2023-04-26T22:51:38 CEST" name="testCase01DeleteJustCreatedPlace" finished-at="2023-04-26T22:51:40 CEST" duration-ms="1647" status="PASS">
+        <test-method signature="testCase01DeleteJustCreatedPlace()[pri:0, instance:tests.fake_google_maps_api.delete_place@59dc36d4]" started-at="2023-05-26T22:24:08 CEST" name="testCase01DeleteJustCreatedPlace" finished-at="2023-05-26T22:24:09 CEST" duration-ms="1557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase01DeleteJustCreatedPlace -->
-        <test-method signature="testCase02DeleteNotExistingPlaceID()[pri:0, instance:tests.fake_google_maps_api.delete_place@74b1838]" started-at="2023-04-26T22:51:40 CEST" name="testCase02DeleteNotExistingPlaceID" finished-at="2023-04-26T22:51:41 CEST" duration-ms="1552" status="PASS">
+        <test-method signature="testCase02DeleteNotExistingPlaceID()[pri:0, instance:tests.fake_google_maps_api.delete_place@59dc36d4]" started-at="2023-05-26T22:24:09 CEST" name="testCase02DeleteNotExistingPlaceID" finished-at="2023-05-26T22:24:11 CEST" duration-ms="1447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase02DeleteNotExistingPlaceID -->
       </class> <!-- tests.fake_google_maps_api.delete_place -->
-      <class name="tests.test_for_books.checkMultyBooks">
-        <test-method signature="checkBookID(java.lang.String)[pri:0, instance:tests.test_for_books.checkMultyBooks@65ae095c]" started-at="2023-04-26T22:51:22 CEST" name="checkBookID" data-provider="CorectIDBooks" finished-at="2023-04-26T22:51:23 CEST" duration-ms="582" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[45]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBookID -->
-        <test-method signature="checkBookID(java.lang.String)[pri:0, instance:tests.test_for_books.checkMultyBooks@65ae095c]" started-at="2023-04-26T22:51:23 CEST" name="checkBookID" data-provider="CorectIDBooks" finished-at="2023-04-26T22:51:24 CEST" duration-ms="574" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[21]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBookID -->
-        <test-method signature="checkBookID(java.lang.String)[pri:0, instance:tests.test_for_books.checkMultyBooks@65ae095c]" started-at="2023-04-26T22:51:24 CEST" name="checkBookID" data-provider="CorectIDBooks" finished-at="2023-04-26T22:51:24 CEST" duration-ms="581" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[32]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBookID -->
-        <test-method signature="checkBookID(java.lang.String)[pri:0, instance:tests.test_for_books.checkMultyBooks@65ae095c]" started-at="2023-04-26T22:51:24 CEST" name="checkBookID" data-provider="CorectIDBooks" finished-at="2023-04-26T22:51:25 CEST" duration-ms="513" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[22]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBookID -->
-        <test-method signature="checkBookID(java.lang.String)[pri:0, instance:tests.test_for_books.checkMultyBooks@65ae095c]" started-at="2023-04-26T22:51:25 CEST" name="checkBookID" data-provider="CorectIDBooks" finished-at="2023-04-26T22:51:25 CEST" duration-ms="647" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBookID -->
-        <test-method signature="checkBookID(java.lang.String)[pri:0, instance:tests.test_for_books.checkMultyBooks@65ae095c]" started-at="2023-04-26T22:51:25 CEST" name="checkBookID" data-provider="CorectIDBooks" finished-at="2023-04-26T22:51:26 CEST" duration-ms="524" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[13]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBookID -->
-        <test-method signature="checkBookID(java.lang.String)[pri:0, instance:tests.test_for_books.checkMultyBooks@65ae095c]" started-at="2023-04-26T22:51:26 CEST" name="checkBookID" data-provider="CorectIDBooks" finished-at="2023-04-26T22:51:26 CEST" duration-ms="512" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[45]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBookID -->
-        <test-method signature="incorrect_Books(java.lang.String)[pri:0, instance:tests.test_for_books.checkMultyBooks@65ae095c]" started-at="2023-04-26T22:51:26 CEST" name="incorrect_Books" data-provider="incorrect_Books" finished-at="2023-04-26T22:51:27 CEST" duration-ms="541" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4221]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incorrect_Books -->
-        <test-method signature="incorrect_Books(java.lang.String)[pri:0, instance:tests.test_for_books.checkMultyBooks@65ae095c]" started-at="2023-04-26T22:51:27 CEST" name="incorrect_Books" data-provider="incorrect_Books" finished-at="2023-04-26T22:51:28 CEST" duration-ms="608" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3321]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incorrect_Books -->
-        <test-method signature="incorrect_Books(java.lang.String)[pri:0, instance:tests.test_for_books.checkMultyBooks@65ae095c]" started-at="2023-04-26T22:51:28 CEST" name="incorrect_Books" data-provider="incorrect_Books" finished-at="2023-04-26T22:51:28 CEST" duration-ms="559" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[0022]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incorrect_Books -->
-        <test-method signature="incorrect_Books(java.lang.String)[pri:0, instance:tests.test_for_books.checkMultyBooks@65ae095c]" started-at="2023-04-26T22:51:28 CEST" name="incorrect_Books" data-provider="incorrect_Books" finished-at="2023-04-26T22:51:29 CEST" duration-ms="577" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incorrect_Books -->
-      </class> <!-- tests.test_for_books.checkMultyBooks -->
-      <class name="tests.test_for_books.add_book_store">
-        <test-method signature="BookStore_AddBook_ID()[pri:0, instance:tests.test_for_books.add_book_store@3b6c624]" started-at="2023-04-26T22:51:20 CEST" name="BookStore_AddBook_ID" finished-at="2023-04-26T22:51:21 CEST" duration-ms="555" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BookStore_AddBook_ID -->
-        <test-method signature="BookStore_AddBook_Msg()[pri:0, instance:tests.test_for_books.add_book_store@3b6c624]" started-at="2023-04-26T22:51:21 CEST" name="BookStore_AddBook_Msg" finished-at="2023-04-26T22:51:21 CEST" duration-ms="609" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BookStore_AddBook_Msg -->
-        <test-method signature="BookStore_AddBook_Status()[pri:0, instance:tests.test_for_books.add_book_store@3b6c624]" started-at="2023-04-26T22:51:21 CEST" name="BookStore_AddBook_Status" finished-at="2023-04-26T22:51:22 CEST" duration-ms="515" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BookStore_AddBook_Status -->
-        <test-method signature="Existing_book()[pri:0, instance:tests.test_for_books.add_book_store@3b6c624]" started-at="2023-04-26T22:51:22 CEST" name="Existing_book" finished-at="2023-04-26T22:51:22 CEST" duration-ms="537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Existing_book -->
-      </class> <!-- tests.test_for_books.add_book_store -->
     </test> <!-- /Users/uroskatanic/IdeaProjects/REST-Assured-Framework -->
   </suite> <!-- All Test Suite -->
 </testng-results>
