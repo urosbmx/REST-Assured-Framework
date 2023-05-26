@@ -3,7 +3,7 @@ name: smoke
 on: workflow_dispatch
 
 jobs:
-  first-job:
+  run-all-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,5 +24,5 @@ jobs:
       - name: Set UP All and run test
         run: mvn clean install
 
-      - name:
-          run: echo  "Smoke test finished"
+      - name: End of test
+        run: echo "Smoke test finished"
