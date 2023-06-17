@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>/Users/uroskatanic/IdeaProjects/REST-Assured-Framework</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>27/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 26 22:24:00 CEST 2023</td>
+<td>Started on:</td><td>Sat Jun 17 15:15:16 CEST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11260 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12433 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,303 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.test_for_books.add_book_store.BookStore_AddBook_Msg()'><b>BookStore_AddBook_Msg</b><br>Test class: tests.test_for_books.add_book_store</td>
+<td><div><pre>java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_Msg(add_book_store.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1336483163", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1336483163'><pre>java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_Msg(add_book_store.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>tests.test_for_books.add_book_store@298d9a05</td></tr>
+<tr>
+<td title='tests.test_for_books.add_book_store.Existing_book()'><b>Existing_book</b><br>Test class: tests.test_for_books.add_book_store</td>
+<td><div><pre>java.lang.AssertionError: Wrong status code expected404 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.Existing_book(add_book_store.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1459215931", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1459215931'><pre>java.lang.AssertionError: Wrong status code expected404 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.Existing_book(add_book_store.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>tests.test_for_books.add_book_store@298d9a05</td></tr>
+<tr>
+<td title='tests.test_for_books.add_book_store.BookStore_AddBook_ID()'><b>BookStore_AddBook_ID</b><br>Test class: tests.test_for_books.add_book_store</td>
+<td><div><pre>java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_ID(add_book_store.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2074109190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2074109190'><pre>java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_ID(add_book_store.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>tests.test_for_books.add_book_store@298d9a05</td></tr>
+<tr>
+<td title='tests.test_for_books.add_book_store.BookStore_AddBook_Status()'><b>BookStore_AddBook_Status</b><br>Test class: tests.test_for_books.add_book_store</td>
+<td><div><pre>java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_Status(add_book_store.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div><a href='#' onClick='toggleBox("stack-trace368599534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace368599534'><pre>java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_Status(add_book_store.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>tests.test_for_books.add_book_store@298d9a05</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,70 +373,140 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.fake_google_maps_api.create_place.TestCase02()'><b>TestCase02</b><br>Test class: tests.fake_google_maps_api.create_place</td>
+<td title='tests.test_for_books.checkMultyBooks.incorrect_Books()'><b>incorrect_Books</b><br>Test class: tests.test_for_books.checkMultyBooks<br>Parameters: 3123</td>
 <td></td>
 <td>0</td>
-<td>tests.fake_google_maps_api.create_place@1e7ab390</td></tr>
+<td>tests.test_for_books.checkMultyBooks@213860b8</td></tr>
 <tr>
-<td title='tests.fake_google_maps_api.get_data_for_place.TestCase02_Check_Name()'><b>TestCase02_Check_Name</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
-<td></td>
-<td>1</td>
-<td>tests.fake_google_maps_api.get_data_for_place@cb7fa71</td></tr>
-<tr>
-<td title='tests.fake_google_maps_api.delete_place.testCase02DeleteNotExistingPlaceID()'><b>testCase02DeleteNotExistingPlaceID</b><br>Test class: tests.fake_google_maps_api.delete_place</td>
-<td></td>
-<td>1</td>
-<td>tests.fake_google_maps_api.delete_place@59dc36d4</td></tr>
-<tr>
-<td title='tests.fake_google_maps_api.get_data_for_place.testCase05_Check_types()'><b>testCase05_Check_types</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
+<td title='tests.test_for_books.checkMultyBooks.checkBookID()'><b>checkBookID</b><br>Test class: tests.test_for_books.checkMultyBooks<br>Parameters: 13</td>
 <td></td>
 <td>0</td>
-<td>tests.fake_google_maps_api.get_data_for_place@cb7fa71</td></tr>
-<tr>
-<td title='tests.fake_google_maps_api.get_data_for_place.testCase06_Check_language()'><b>testCase06_Check_language</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
-<td></td>
-<td>1</td>
-<td>tests.fake_google_maps_api.get_data_for_place@cb7fa71</td></tr>
-<tr>
-<td title='tests.fake_google_maps_api.create_place.TestCase03()'><b>TestCase03</b><br>Test class: tests.fake_google_maps_api.create_place</td>
-<td></td>
-<td>0</td>
-<td>tests.fake_google_maps_api.create_place@1e7ab390</td></tr>
-<tr>
-<td title='tests.fake_google_maps_api.get_data_for_place.testCase03_PlaceID_New()'><b>testCase03_PlaceID_New</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
-<td></td>
-<td>0</td>
-<td>tests.fake_google_maps_api.get_data_for_place@cb7fa71</td></tr>
+<td>tests.test_for_books.checkMultyBooks@213860b8</td></tr>
 <tr>
 <td title='tests.fake_google_maps_api.get_data_for_place.testCase07_Check_website()'><b>testCase07_Check_website</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
 <td></td>
-<td>1</td>
-<td>tests.fake_google_maps_api.get_data_for_place@cb7fa71</td></tr>
+<td>0</td>
+<td>tests.fake_google_maps_api.get_data_for_place@4adf3582</td></tr>
 <tr>
-<td title='tests.fake_google_maps_api.delete_place.testCase01DeleteJustCreatedPlace()'><b>testCase01DeleteJustCreatedPlace</b><br>Test class: tests.fake_google_maps_api.delete_place</td>
-<td></td>
-<td>1</td>
-<td>tests.fake_google_maps_api.delete_place@59dc36d4</td></tr>
-<tr>
-<td title='tests.fake_google_maps_api.get_data_for_place.testCase04_Check_address()'><b>testCase04_Check_address</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
+<td title='tests.fake_google_maps_api.update_place.TestCase03()'><b>TestCase03</b><br>Test class: tests.fake_google_maps_api.update_place</td>
 <td></td>
 <td>0</td>
-<td>tests.fake_google_maps_api.get_data_for_place@cb7fa71</td></tr>
+<td>tests.fake_google_maps_api.update_place@7757025d</td></tr>
 <tr>
-<td title='tests.fake_google_maps_api.create_place.TestCase01()'><b>TestCase01</b><br>Test class: tests.fake_google_maps_api.create_place</td>
+<td title='tests.test_for_books.checkMultyBooks.incorrect_Books()'><b>incorrect_Books</b><br>Test class: tests.test_for_books.checkMultyBooks<br>Parameters: 4221</td>
 <td></td>
 <td>0</td>
-<td>tests.fake_google_maps_api.create_place@1e7ab390</td></tr>
-<tr>
-<td title='tests.fake_google_maps_api.get_data_for_place.TestCase01_Get_Data_for_Place()'><b>TestCase01_Get_Data_for_Place</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
-<td></td>
-<td>1</td>
-<td>tests.fake_google_maps_api.get_data_for_place@cb7fa71</td></tr>
+<td>tests.test_for_books.checkMultyBooks@213860b8</td></tr>
 <tr>
 <td title='tests.fake_google_maps_api.get_data_for_place.testCase08_Ceheck_body()'><b>testCase08_Ceheck_body</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
 <td></td>
 <td>0</td>
-<td>tests.fake_google_maps_api.get_data_for_place@cb7fa71</td></tr>
+<td>tests.fake_google_maps_api.get_data_for_place@4adf3582</td></tr>
+<tr>
+<td title='tests.test_for_books.checkMultyBooks.checkBookID()'><b>checkBookID</b><br>Test class: tests.test_for_books.checkMultyBooks<br>Parameters: 45</td>
+<td></td>
+<td>0</td>
+<td>tests.test_for_books.checkMultyBooks@213860b8</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.create_place.TestCase02()'><b>TestCase02</b><br>Test class: tests.fake_google_maps_api.create_place</td>
+<td></td>
+<td>0</td>
+<td>tests.fake_google_maps_api.create_place@57e4b86c</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.create_place.TestCase01()'><b>TestCase01</b><br>Test class: tests.fake_google_maps_api.create_place</td>
+<td></td>
+<td>1</td>
+<td>tests.fake_google_maps_api.create_place@57e4b86c</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.get_data_for_place.TestCase01_Get_Data_for_Place()'><b>TestCase01_Get_Data_for_Place</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
+<td></td>
+<td>0</td>
+<td>tests.fake_google_maps_api.get_data_for_place@4adf3582</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.get_data_for_place.testCase04_Check_address()'><b>testCase04_Check_address</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
+<td></td>
+<td>0</td>
+<td>tests.fake_google_maps_api.get_data_for_place@4adf3582</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.delete_place.testCase01DeleteJustCreatedPlace()'><b>testCase01DeleteJustCreatedPlace</b><br>Test class: tests.fake_google_maps_api.delete_place</td>
+<td></td>
+<td>0</td>
+<td>tests.fake_google_maps_api.delete_place@589dfa6f</td></tr>
+<tr>
+<td title='tests.test_for_books.checkMultyBooks.checkBookID()'><b>checkBookID</b><br>Test class: tests.test_for_books.checkMultyBooks<br>Parameters: 11</td>
+<td></td>
+<td>0</td>
+<td>tests.test_for_books.checkMultyBooks@213860b8</td></tr>
+<tr>
+<td title='tests.test_for_books.checkMultyBooks.checkBookID()'><b>checkBookID</b><br>Test class: tests.test_for_books.checkMultyBooks<br>Parameters: 32</td>
+<td></td>
+<td>0</td>
+<td>tests.test_for_books.checkMultyBooks@213860b8</td></tr>
+<tr>
+<td title='tests.Google_Maps_POJO.first_test.testCase()'><b>testCase</b><br>Test class: tests.Google_Maps_POJO.first_test</td>
+<td></td>
+<td>0</td>
+<td>tests.Google_Maps_POJO.first_test@12fccff0</td></tr>
+<tr>
+<td title='tests.test_for_books.checkMultyBooks.checkBookID()'><b>checkBookID</b><br>Test class: tests.test_for_books.checkMultyBooks<br>Parameters: 21</td>
+<td></td>
+<td>0</td>
+<td>tests.test_for_books.checkMultyBooks@213860b8</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.get_data_for_place.testCase06_Check_language()'><b>testCase06_Check_language</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
+<td></td>
+<td>0</td>
+<td>tests.fake_google_maps_api.get_data_for_place@4adf3582</td></tr>
+<tr>
+<td title='tests.test_for_books.checkMultyBooks.incorrect_Books()'><b>incorrect_Books</b><br>Test class: tests.test_for_books.checkMultyBooks<br>Parameters: 0022</td>
+<td></td>
+<td>0</td>
+<td>tests.test_for_books.checkMultyBooks@213860b8</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.delete_place.testCase02DeleteNotExistingPlaceID()'><b>testCase02DeleteNotExistingPlaceID</b><br>Test class: tests.fake_google_maps_api.delete_place</td>
+<td></td>
+<td>0</td>
+<td>tests.fake_google_maps_api.delete_place@589dfa6f</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.get_data_for_place.TestCase02_Check_Name()'><b>TestCase02_Check_Name</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
+<td></td>
+<td>0</td>
+<td>tests.fake_google_maps_api.get_data_for_place@4adf3582</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.create_place.TestCase03()'><b>TestCase03</b><br>Test class: tests.fake_google_maps_api.create_place</td>
+<td></td>
+<td>0</td>
+<td>tests.fake_google_maps_api.create_place@57e4b86c</td></tr>
+<tr>
+<td title='tests.test_for_books.checkMultyBooks.incorrect_Books()'><b>incorrect_Books</b><br>Test class: tests.test_for_books.checkMultyBooks<br>Parameters: 3321</td>
+<td></td>
+<td>0</td>
+<td>tests.test_for_books.checkMultyBooks@213860b8</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.get_data_for_place_POJO.get_data()'><b>get_data</b><br>Test class: tests.fake_google_maps_api.get_data_for_place_POJO</td>
+<td></td>
+<td>0</td>
+<td>tests.fake_google_maps_api.get_data_for_place_POJO@52c46334</td></tr>
+<tr>
+<td title='tests.test_for_books.checkMultyBooks.checkBookID()'><b>checkBookID</b><br>Test class: tests.test_for_books.checkMultyBooks<br>Parameters: 45</td>
+<td></td>
+<td>0</td>
+<td>tests.test_for_books.checkMultyBooks@213860b8</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.get_data_for_place.testCase05_Check_types()'><b>testCase05_Check_types</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
+<td></td>
+<td>0</td>
+<td>tests.fake_google_maps_api.get_data_for_place@4adf3582</td></tr>
+<tr>
+<td title='tests.test_for_books.checkMultyBooks.checkBookID()'><b>checkBookID</b><br>Test class: tests.test_for_books.checkMultyBooks<br>Parameters: 22</td>
+<td></td>
+<td>0</td>
+<td>tests.test_for_books.checkMultyBooks@213860b8</td></tr>
+<tr>
+<td title='tests.fake_google_maps_api.get_data_for_place.testCase03_PlaceID_New()'><b>testCase03_PlaceID_New</b><br>Test class: tests.fake_google_maps_api.get_data_for_place</td>
+<td></td>
+<td>0</td>
+<td>tests.fake_google_maps_api.get_data_for_place@4adf3582</td></tr>
 </table><p>
 </body>
 </html>

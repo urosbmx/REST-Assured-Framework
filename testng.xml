@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="/Users/uroskatanic/IdeaProjects/REST-Assured-Framework">
    <classes>
-<!--       Test for books-->
-<!--       <class name="tests.test_for_books.add_book_store"></class>-->
-<!--       <class name="tests.test_for_books.check_book_value"></class>-->
-<!--       <class name="tests.test_for_books.checkMultyBooks"></class>-->
-<!--       Test for google maps-->
-       <class name="tests.fake_google_maps_api.get_data_for_place"></class>
-       <class name="tests.fake_google_maps_api.create_place"></class>
-       <class name="tests.fake_google_maps_api.delete_place"></class>
-       <class name="tests.fake_google_maps_api.update_place"></class>
-       <class name="tests.fake_google_maps_api.get_data_for_place_POJO"></class>
-       <class name="tests.Google_Maps_POJO.first_test"></class>
+       <class name="tests.fake_google_maps_api.get_data_for_place"> </class>
+       <class name="tests.fake_google_maps_api.create_place"> </class>
+       <class name="tests.fake_google_maps_api.delete_place"> </class>
+       <class name="tests.fake_google_maps_api.update_place"> </class>
+       <class name="tests.fake_google_maps_api.get_data_for_place_POJO"> </class>
+       <class name="tests.Google_Maps_POJO.first_test"> </class>
+       <class name="tests.request_builder.TC_01_create_place_data"> </class>
+       <class name="tests.request_builder.TC_02_get_place_data"> </class>
+       <class name="tests.eComerc.TC_for_product_form_data"> </class>
 
    </classes>
 </test>

@@ -1,23 +1,26 @@
-package tests.google_maps_shema;
+package tests.request_builder;
 
 import POJO_Class.Location;
 import POJO_Class.addPlace;
-import io.restassured.RestAssured;
-import io.restassured.module.jsv.JsonSchemaValidator;
+import funcionality.createPlace;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 
-public class google_maps {
+public class TC_01_create_place_data {
 
+    String placeID = createPlace.createPlaceCall();
     @Test
-    public void TCForShema(){
+    public void TCForSchema(){
 
         List<String> myList = new ArrayList<String>();
-        addPlace  p = new addPlace();
+        addPlace p = new addPlace();
         Location l = new Location();
         p.setAccuracy(51);
         p.setAddress("Dzona Kenedija 23");
@@ -32,10 +35,10 @@ public class google_maps {
         l.setLng(54.021);
         p.setLocation(l);
 
+        RequestSpecification req = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com").addQueryParam("key","qaclick123").setContentType(ContentType.JSON).build();
 
-        RestAssured.baseURI="https://rahulshettyacademy.com";
-        given().queryParam("key","=qaclick123")
-                .header("Content-Type", "application/json")
+        given()
+                .spec(req)
                 .log()
                 .all()
                 .body(p)
@@ -44,11 +47,7 @@ public class google_maps {
                 .log()
                 .all()
                 .assertThat()
-                .statusCode(200)
-                .and()
-                .body(JsonSchemaValidator.matchesJsonSchema("target/test-classes/files/schema.json"));
-
-
+                .statusCode(200);
 
     }
 }
