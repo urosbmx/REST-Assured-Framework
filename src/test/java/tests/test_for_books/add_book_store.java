@@ -12,7 +12,7 @@ import  files.payload;
 
 public class add_book_store {
 
-    String baseURL ="http://216.10.245.166/";
+    String baseURL ="https://rahulshettyacademy.com/";
     String addBookUrl = "Library/Addbook.php";
     Faker faker = new Faker();
     String name = faker.name().firstName();

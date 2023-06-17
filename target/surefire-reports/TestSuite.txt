@@ -1,4 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.918 sec - in TestSuite
+Tests run: 31, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 14.529 sec <<< FAILURE! - in TestSuite
+BookStore_AddBook_ID(tests.test_for_books.add_book_store)  Time elapsed: 0.641 sec  <<< FAILURE!
+java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_ID(add_book_store.java:38)
+
+BookStore_AddBook_Msg(tests.test_for_books.add_book_store)  Time elapsed: 0.52 sec  <<< FAILURE!
+java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_Msg(add_book_store.java:33)
+
+BookStore_AddBook_Status(tests.test_for_books.add_book_store)  Time elapsed: 0.526 sec  <<< FAILURE!
+java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_Status(add_book_store.java:28)
+
+Existing_book(tests.test_for_books.add_book_store)  Time elapsed: 0.517 sec  <<< FAILURE!
+java.lang.AssertionError: Wrong status code expected404 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.Existing_book(add_book_store.java:24)
+

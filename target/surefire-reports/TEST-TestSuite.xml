@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="11.24" tests="13" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="9.705" tests="31" errors="0" skipped="0" failures="4">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="19.0.1+10-21"/>
@@ -34,7 +34,7 @@
     <property name="os.version" value="13.4"/>
     <property name="library.jansi.path" value="/Users/uroskatanic/apache-maven-3.9.0/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="surefire.suiteXmlFiles" value="smoke.xml"/>
+    <property name="surefire.suiteXmlFiles" value="testng.xml"/>
     <property name="user.home" value="/Users/uroskatanic"/>
     <property name="user.timezone" value="Europe/Belgrade"/>
     <property name="file.encoding" value="UTF-8"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="/Users/uroskatanic/apache-maven-3.9.0/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="19"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dsurefire.suiteXmlFiles=smoke.xml"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dsurefire.suiteXmlFiles=testng.xml"/>
     <property name="java.home" value="/Users/uroskatanic/Library/Java/JavaVirtualMachines/openjdk-19.0.1/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
@@ -61,17 +61,179 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="TestCase01_Get_Data_for_Place" classname="tests.fake_google_maps_api.get_data_for_place" time="1.256"/>
-  <testcase name="TestCase02_Check_Name" classname="tests.fake_google_maps_api.get_data_for_place" time="1.004"/>
-  <testcase name="testCase03_PlaceID_New" classname="tests.fake_google_maps_api.get_data_for_place" time="0.945"/>
-  <testcase name="testCase04_Check_address" classname="tests.fake_google_maps_api.get_data_for_place" time="0.972"/>
-  <testcase name="testCase05_Check_types" classname="tests.fake_google_maps_api.get_data_for_place" time="0.935"/>
-  <testcase name="testCase06_Check_language" classname="tests.fake_google_maps_api.get_data_for_place" time="1.125"/>
-  <testcase name="testCase07_Check_website" classname="tests.fake_google_maps_api.get_data_for_place" time="1.011"/>
+  <testcase name="BookStore_AddBook_ID" classname="tests.test_for_books.add_book_store" time="0.641">
+    <failure message="Wrong status code expected200 received500" type="java.lang.AssertionError">java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_ID(add_book_store.java:38)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://rahulshettyacademy.com/Library/Addbook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Learn Appium Automation with Ruthanne",
+    "isbn": "bcd",
+    "aisle": "java.util.Random@5f409872",
+    "author": "JohnRuthanne"
+}
+HTTP/1.0 500 Internal Server Error
+Date: Sat, 17 Jun 2023 13:15:17 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 0
+Connection: close
+Content-Type: application/json; charset=UTF-8
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="BookStore_AddBook_Msg" classname="tests.test_for_books.add_book_store" time="0.52">
+    <failure message="Wrong status code expected200 received500" type="java.lang.AssertionError">java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_Msg(add_book_store.java:33)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://rahulshettyacademy.com/Library/Addbook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Learn Appium Automation with Ruthanne",
+    "isbn": "bcd",
+    "aisle": "java.util.Random@5f409872",
+    "author": "JohnRuthanne"
+}
+HTTP/1.0 500 Internal Server Error
+Date: Sat, 17 Jun 2023 13:15:18 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 0
+Connection: close
+Content-Type: application/json; charset=UTF-8
+]]></system-out>
+  </testcase>
+  <testcase name="BookStore_AddBook_Status" classname="tests.test_for_books.add_book_store" time="0.526">
+    <failure message="Wrong status code expected200 received500" type="java.lang.AssertionError">java.lang.AssertionError: Wrong status code expected200 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.BookStore_AddBook_Status(add_book_store.java:28)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://rahulshettyacademy.com/Library/Addbook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Learn Appium Automation with Ruthanne",
+    "isbn": "bcd",
+    "aisle": "java.util.Random@5f409872",
+    "author": "JohnRuthanne"
+}
+HTTP/1.0 500 Internal Server Error
+Date: Sat, 17 Jun 2023 13:15:18 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 0
+Connection: close
+Content-Type: application/json; charset=UTF-8
+]]></system-out>
+  </testcase>
+  <testcase name="Existing_book" classname="tests.test_for_books.add_book_store" time="0.517">
+    <failure message="Wrong status code expected404 received500" type="java.lang.AssertionError">java.lang.AssertionError: Wrong status code expected404 received500
+	at org.testng.Assert.fail(Assert.java:110)
+	at requests.POST_Request.POSTRequest(POST_Request.java:87)
+	at tests.test_for_books.add_book_store.Existing_book(add_book_store.java:24)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://rahulshettyacademy.com/Library/Addbook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Learn Appium Automation with Java",
+    "isbn": "bcd",
+    "aisle": "227",
+    "author": "John foe"
+}
+HTTP/1.0 500 Internal Server Error
+Date: Sat, 17 Jun 2023 13:15:19 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 0
+Connection: close
+Content-Type: application/json; charset=UTF-8
+]]></system-out>
+  </testcase>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.543"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.301"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.302"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.302"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.301"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.29"/>
+  <testcase name="checkBookID" classname="tests.test_for_books.checkMultyBooks" time="0.31"/>
+  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.297"/>
+  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.284"/>
+  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.297"/>
+  <testcase name="incorrect_Books" classname="tests.test_for_books.checkMultyBooks" time="0.308"/>
+  <testcase name="TestCase01_Get_Data_for_Place" classname="tests.fake_google_maps_api.get_data_for_place" time="0.362"/>
+  <testcase name="TestCase02_Check_Name" classname="tests.fake_google_maps_api.get_data_for_place" time="0.355"/>
+  <testcase name="testCase03_PlaceID_New" classname="tests.fake_google_maps_api.get_data_for_place" time="0.349"/>
+  <testcase name="testCase04_Check_address" classname="tests.fake_google_maps_api.get_data_for_place" time="0.354"/>
+  <testcase name="testCase05_Check_types" classname="tests.fake_google_maps_api.get_data_for_place" time="0.355"/>
+  <testcase name="testCase06_Check_language" classname="tests.fake_google_maps_api.get_data_for_place" time="0.348"/>
+  <testcase name="testCase07_Check_website" classname="tests.fake_google_maps_api.get_data_for_place" time="0.416"/>
   <testcase name="testCase08_Ceheck_body" classname="tests.fake_google_maps_api.get_data_for_place" time="0"/>
-  <testcase name="TestCase01" classname="tests.fake_google_maps_api.create_place" time="0.348"/>
-  <testcase name="TestCase02" classname="tests.fake_google_maps_api.create_place" time="0.326"/>
-  <testcase name="TestCase03" classname="tests.fake_google_maps_api.create_place" time="0.313"/>
-  <testcase name="testCase01DeleteJustCreatedPlace" classname="tests.fake_google_maps_api.delete_place" time="1.557"/>
-  <testcase name="testCase02DeleteNotExistingPlaceID" classname="tests.fake_google_maps_api.delete_place" time="1.448"/>
+  <testcase name="TestCase01" classname="tests.fake_google_maps_api.create_place" time="1.004"/>
+  <testcase name="TestCase02" classname="tests.fake_google_maps_api.create_place" time="0.376"/>
+  <testcase name="TestCase03" classname="tests.fake_google_maps_api.create_place" time="0.338"/>
+  <testcase name="testCase01DeleteJustCreatedPlace" classname="tests.fake_google_maps_api.delete_place" time="0.568"/>
+  <testcase name="testCase02DeleteNotExistingPlaceID" classname="tests.fake_google_maps_api.delete_place" time="0.54"/>
+  <testcase name="TestCase03" classname="tests.fake_google_maps_api.update_place" time="0.366"/>
+  <testcase name="get_data" classname="tests.fake_google_maps_api.get_data_for_place_POJO" time="0.383"/>
+  <testcase name="testCase" classname="tests.Google_Maps_POJO.first_test" time="0.547"/>
 </testsuite>

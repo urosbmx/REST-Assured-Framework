@@ -26,5 +26,5 @@ jobs:
       run: mvn clean test -Dsurefire.suiteXmlFiles=testng.xml
 
     - name: End of test
-      run: echo "Smoke test finished"
+      run: echo "Regresion test finished"
 
