@@ -6,9 +6,6 @@ on:
 
 jobs:
   run-all-test:
-    env:
-      EMAIL_FOR_LOGIN_CALL: ${{secrets.EMAIL}}
-      PASSWORD_FOR_LOGIN_CALL: ${{secrets.PASSWORD}}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
