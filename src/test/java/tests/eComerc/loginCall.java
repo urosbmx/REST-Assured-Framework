@@ -1,13 +1,11 @@
 package tests.eComerc;
 
-import POJO_Class.LoginResponse;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import java.util.HashMap;
 import java.util.Map;
 import org.apache.commons.lang3.StringUtils;
-import resources.env_files;
 
 import static io.restassured.RestAssured.given;
 
