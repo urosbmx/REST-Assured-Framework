@@ -8,10 +8,11 @@ on:
 jobs:
   run-all-test:
     runs-on: ubuntu-latest
-    env:
-      EMAIL_FOR_LOGIN_CALL: ${{secrets.EMAIL}}
-      PASSWORD_FOR_LOGIN_CALL: ${{secrets.PASSWORD}}
     steps:
+      - name: secrets for login
+        uses:
+          EMAIL_FOR_LOGIN_CALL: ${{secrets.EMAIL}}
+          PASSWORD_FOR_LOGIN_CALL: ${{secrets.PASSWORD}}
       - name: Checkout
         uses: actions/checkout@v3
 
