@@ -7,10 +7,10 @@ on:
 
 jobs:
   run-all-test:
+    runs-on: ubuntu-latest
     env:
       EMAIL_FOR_LOGIN_CALL: ${{secrets.EMAIL}}
       PASSWORD_FOR_LOGIN_CALL: ${{secrets.PASSWORD}}
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
