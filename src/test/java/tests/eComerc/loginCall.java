@@ -17,8 +17,8 @@ public class loginCall {
         RequestSpecification req =	new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com")
                 .setContentType(ContentType.JSON).build();
         Map<String,String> qvery = new HashMap<>();
-        qvery.put("userEmail",  System.getenv("EMAIL_FOR_LOGIN_CALL"));
-        qvery.put("userPassword", System.getenv("PASSWORD_FOR_LOGIN_CALL"));
+        qvery.put("userEmail",  "rahulshetty@gmail.com");
+        qvery.put("userPassword","Iamking@000");
         String mapAssString = StringUtils.join(qvery.entrySet(),"&");
         RequestSpecification reqLogin = given().spec(req).body(qvery);
         String logins = reqLogin.when().post("/api/ecom/auth/login").then().extract().response().asString();

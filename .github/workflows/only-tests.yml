@@ -3,16 +3,11 @@ name: Regression test
 
 on:
   push:
-  workflow_dispatch:
 
 jobs:
   run-all-test:
     runs-on: ubuntu-latest
     steps:
-      - name: secrets for login
-        uses:
-          EMAIL_FOR_LOGIN_CALL: ${{secrets.EMAIL}}
-          PASSWORD_FOR_LOGIN_CALL: ${{secrets.PASSWORD}}
       - name: Checkout
         uses: actions/checkout@v3
 
@@ -29,10 +24,7 @@ jobs:
           maven-version: 3.8.2
 
       - name: Set UP All and run test
-        run: mvn clean test -Dsurefire.suiteXmlFiles=testng.xml
-
-      - name: End of tst
-      - run: echo "Regresion test finished"
+        run: mvn clean install
 
 
 
