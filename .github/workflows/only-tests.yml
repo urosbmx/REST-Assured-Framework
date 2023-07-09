@@ -26,5 +26,11 @@ jobs:
       - name: Set UP All and run test
         run: mvn clean install
 
+      - name: Smoke test 1/2
+        uses: ./.github/actions/smoke-test
+
+      - name: Smoke test 2/2
+        run: echo "Smoke test finished"
+
 
 

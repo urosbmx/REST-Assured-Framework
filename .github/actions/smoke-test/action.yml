@@ -1,0 +1,11 @@
+  name: 'Run smoke test'
+  description: 'This action runing smoke test for one of'
+  runs:
+    using: 'composite'
+    steps:
+      - name: Set UP All and run smoke test
+        run: mvn clean test -Dsurefire.suiteXmlFiles=smoke.xml
+        shell: bash
+      - name: End of test
+        run: echo "Smoke test finished"
+        shell: bash
