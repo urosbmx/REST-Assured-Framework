@@ -32,8 +32,5 @@ jobs:
       - name: Smoke test 2/2
         run: echo "Smoke test finished"
 
-      - name: Deploy on github action
-        uses: ./.github/actions/report
-
 
 
